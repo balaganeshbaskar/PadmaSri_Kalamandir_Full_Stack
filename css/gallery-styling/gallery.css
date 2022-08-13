@@ -1,0 +1,126 @@
+body{
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*navbar styles */
+.navLinks {
+	text-align: center;
+}
+@media screen and (min-width: 580px) {
+  .navLinks {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .navLinks {
+    font-size: 15px;
+  }
+}
+
+/*hero text styling*/
+/*styling of the hero title*/
+.image-container {
+  background-image: url("stockImage.jpg"); /* The image used - important! */
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 200px; /* Some height */
+  margin-top: 80px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding-top: 20px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+ }
+
+ @media screen and (min-width: 660px) {
+  .text {
+  	 padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .text {
+  	padding-top: 15px;
+  }
+}
+
+.function-image {
+  background-image: url("stockImage.jpg"); /* The image used - important! */
+  background-size: cover;
+  /*position: relative; *//* Needed to position the cutout text in the middle of the image */
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  transition: 0.5s;
+}
+
+.function-image:hover {
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.function-name {
+  color: white;
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding-top: 20px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 87%; /* Position text in the middle */
+  left: 48%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;*/ /* This makes the cutout text possible */
+  white-space: nowrap;
+}
+
+ @media screen and (min-width: 660px) {
+  .function-name {
+  	 font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .function-name {
+  	font-size: 15px;
+  }
+}
+
+ @media screen and (min-width: 660px) {
+  .function-image {
+  	 
+  	 height: 300px; /* Some height */
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .function-image {
+  	
+  	height: 200px; /* Some height */
+  }
+}
+
+.sample-button {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}

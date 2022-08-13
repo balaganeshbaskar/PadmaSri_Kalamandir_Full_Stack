@@ -1,0 +1,482 @@
+/*common styling*/
+body{
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.navLinks{
+  text-align: center;
+}
+
+@media screen and (min-width: 580px) {
+  .navLinks {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .navLinks {
+    font-size: 15px;
+  }
+}
+
+.curriculumHeader{
+  text-align: center;
+  font-weight: 700;
+  color: #ae41d9;
+}
+
+
+.curriculumHeader{
+  margin-top: 50px;
+}
+
+/*for mobile friendly scaling of fonts for curriculum header*/
+@media screen and (min-width: 768px) {
+  .curriculumHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .curriculumHeader{
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 758px) {
+.navbar-brand{
+  padding-top: 20px;
+  }
+}
+
+/*styling for the header*/
+/*styling of the hero title*/
+.image-container {
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 200px; /* Some height */
+  margin-top: 80px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;  This makes the cutout text possible */
+}
+@media screen and (min-width: 660px) {
+  .text {
+     padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .text {
+    padding-top: 15px;
+  }
+
+  .image-container {
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 100px; /* Some height */
+    margin-top: 80px;
+  }
+
+  .text {
+    background-color: white;
+    color: black;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 60%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    /*mix-blend-mode: screen;  This makes the cutout text possible */
+  }
+}
+
+/*small table and vision styling*/
+/*styling for the block quote*/
+@media screen and (max-width: 767px) {
+  .vision{
+    font-size: 20px;
+  }
+}
+/*styling for the block quote*/
+@media screen and (max-width: 767px) {
+  .vision{
+    font-size: 20px;
+  }
+}
+
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+
+}
+.blockquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.blockquote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+  
+  /*content:"\f10d";*/
+  font-size: 200px;
+  color: rgba(0,0,0,0.1);
+   
+}
+
+.blockquote::after {
+    /*content: "";*/
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid #bf0024;
+    height: 3px;
+    width: 200px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  border-radius: 100px 20px 100px 20px;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.otro-blockquote::before{
+  /*content: "\201C";*/
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+@media screen and (min-width: 768px) {
+  .otro-blockquote {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .otro-blockquote {
+    font-size: 15px;
+  }
+}
+
+/*table styling*/
+table, th, td{
+border: 2px solid #6a1b9a;
+border-collapse: collapse;
+
+}
+
+th{
+  color: #ec407a;
+}
+
+td, th{
+padding-left: 32px;
+padding-right: 32px;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: 15px;
+font-weight: 700;
+}
+
+.curriculumTable{
+  margin-top: 65px; 
+  overflow-x: auto; 
+  text-align: center; 
+}
+
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.annualTermTable{
+  margin-top: 50px; 
+  overflow-x: auto; 
+  text-align: center; 
+}
+
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructorHeader{
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .instructorHeader {
+    font-size: 30px;
+    color: #ae41d9;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instructorHeader {
+    font-size: 20px;
+    color: #ae41d9;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+/*-__________________________________________________________________________________*/
+
+.course-card {
+  box-shadow: 0 9px 20px rgba(0,0,0,0.4);
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.course-card-title { 
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .course-card-content {
+    margin-left: 50px;
+    font-size: 20px;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .course-card-content {
+    margin-left: 20px;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+
+  }
+}
+
+.course-card-pricing { 
+  text-align: center;
+  padding: 20px;
+}
+
+.main-price {
+  font-size: 20px;
+}
+
+.sub-price {
+  font-weight: bold;
+  color: gray;
+  font-size: 15px;
+}
+
+/*------------------------------------Card Flipping styling-----------------------------------------------------*/
+
+.scene {
+  width: 100%;
+  height: 500px;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  margin-top: 40px;
+  border-radius: 100px 20px 100px 20px !important;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card__face--front {
+  background-size: cover;
+  /*position: relative; *//* Needed to position the cutout text in the middle of the image */
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  border-radius: 100px 20px 100px 20px !important;
+}
+
+.card__face--back {
+  background-size: cover;
+  /*position: relative; *//* Needed to position the cutout text in the middle of the image */
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  transform: rotateY( 180deg );
+  border-radius: 20px 100px 20px 100px !important;
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.function-image:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.function-name-front {
+  /*text-shadow: 2px 2px #ffff00;*/
+  /*text-shadow: 1px 1px 5px #ffffff, 1px 1px 5px #ffffff;*/
+  height: 100px;
+  width: 345px;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 90%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;*/ /* This makes the cutout text possible */
+  white-space: nowrap;
+  background-color: black;
+  border-radius: 100px 20px 100px 20px !important;
+  opacity: 0.8;
+}
+
+
+ @media screen and (min-width: 660px) {
+  .function-name-front {
+     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .function-name-front {
+    top: 90%; /* Position text in the middle */
+    font-size: 20px;
+    height: 100px;
+    width: 375px;
+    border-radius: 100px 20px 100px 20px !important;
+  }
+
+
+}
+
+.function-name-back {
+  height: 220px;
+  width: 345px;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 80%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;*/ /* This makes the cutout text possible */
+  white-space: nowrap;
+  background-color: black;
+  border-radius: 20px 100px 20px 100px !important;
+  opacity: 0.8;
+}
+
+ @media screen and (min-width: 660px) {
+  .function-name-back {
+     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .function-name-back {
+    font-size: 20px;
+    top: 82%; /* Position text in the middle */
+    height: 200px;
+    width: 375px;
+    border-radius: 20px 100px 20px 100px !important;
+  }
+}
+
+ @media screen and (min-width: 660px) {
+  .function-image {
+     
+     height: 300px; /* Some height */
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .function-image {
+    
+    height: 200px; /* Some height */
+  }
+}
+

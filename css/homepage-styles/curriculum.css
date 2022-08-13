@@ -1,0 +1,89 @@
+table, th, td{
+border: 2px solid #6a1b9a;
+border-collapse: collapse;
+
+}
+
+th{
+  color: #ec407a;
+}
+
+td, th{
+padding-left: 32px;
+padding-right: 32px;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: 15px;
+font-weight: 700;
+}
+
+.curriculumTable{
+  margin-top: 50px; 
+  overflow-x: auto; 
+  text-align: center; 
+}
+.curriculum{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #F0F0F0;
+  padding-bottom: 50px;
+}
+
+.curriculumWrapper{
+	padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .curriculumWrapper {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .curriculumWrapper{
+    padding-top: 80px;
+  }
+}
+
+.curriculumHeader{
+  text-align: center;
+  font-weight: 700;
+  color: #ae41d9;
+}
+
+
+.curriculumHeader{
+	margin-top: 50px;
+}
+
+/*for mobile friendly scaling of fonts for curriculum header*/
+@media screen and (min-width: 768px) {
+  .curriculumHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .curriculumHeader{
+    font-size: 30px;
+  }
+}
+
+/*for mobile friendly scaling of fonts for curriculum texxt*/
+@media screen and (min-width: 768px) {
+  .curriculumText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .curriculumText{
+    font-size: 13px;
+  }
+}
+
+.curriculumText{
+	margin: 40px;
+
+}

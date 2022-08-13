@@ -1,0 +1,80 @@
+/*styling of the hero class starts here*/
+.container-fluid{
+  max-width: 1600px;
+}
+
+.heroClassText{
+	width: 100%;
+	text-align: center;
+  margin-top: 140px;
+
+	/*style to justify-content center vertically*/
+	/*display: flex;
+	justify-content: center;
+	flex-direction: column;
+*/}
+
+.heroClassImage
+{
+	width: 90%;
+	border-radius: 200px 40px 200px 40px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  margin-bottom: 80px;
+}
+
+/*for mobile friendly styling*/
+
+
+
+/*for the fonts inside the cards*/
+/*for hero header*/
+@media screen and (min-width: 768px) {
+  .heroClassTextHeader {
+    margin-top: 40px;
+    font-size: 70px;
+    color: #ae41d9;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heroClassTextHeader {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ae41d9;
+    font-weight: 700;
+  }
+
+  .heroClassImage
+  {
+    height: 250px;
+    width: 300px !important;
+    border-radius: 100px 10px 100px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    margin-bottom: 80px;
+  }
+}
+
+/*for hero tagline*/
+@media screen and (min-width: 768px) {
+  .heroClassTextTagLine {
+    font-size: 25px;
+    margin-top: -40px;
+    padding-bottom: 30px;
+    color: #ae41d9;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heroClassTextTagLine {
+    font-size: 18px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+    color: #ae41d9;
+  }
+}
+
+.heroClassTextTagLine{
+
+}
+/*styling of the hero class ends here*/

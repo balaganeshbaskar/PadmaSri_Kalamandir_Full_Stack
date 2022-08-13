@@ -1,0 +1,394 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.contact
+{
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.getintouch
+{
+  font-size: 18px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px)
+{
+  .contact
+  {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .getintouch
+  {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+  font-weight: 700;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.form-group{
+  text-align: center;
+}
+
+input, textarea, select{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 767px) {
+  .form-group{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.accent-bar {
+    background-color: #11cfff;
+    /*#11fbff; #11c7ff;*/
+}
+
+@media screen and (max-width: 750px) 
+{
+  .contact-details
+  {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 60px;
+  }
+
+  .hero-sub-images
+  {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px !important;
+  }
+}
+
+.instructorHeader{
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .instructorHeader {
+    font-size: 30px;
+    color: #ae41d9;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instructorHeader {
+    font-size: 50px;
+    color: #ae41d9;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.contact-details
+{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 60px;
+}
+
+.hero-sub-images {
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  width: 100%;
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+.accent-bar {
+    width: 55px;
+    height: 5px;
+    line-height: 1;
+    display: inline-block;
+    margin: 5px 0 20px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+
+}
+/*styling for the image container*/
+  .image-container {
+  margin-top: 100px;
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 200px; /* Some height */
+}
+.text {
+  background-color: white;
+  padding-bottom: 20px;
+  color: black;
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;  This makes the cutout text possible */
+}
+
+#student {
+  background-color:  #c5e1a5;
+  padding: 30px;
+}
+#program {
+  background-color: #81d4fa;
+  padding: 30px;
+}
+#workshop {
+  background-color: #9fa8da;
+  padding: 30px;
+}
+
+/*footer styling*/
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:white;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:white;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+
+  .image-container {
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 100px; /* Some height */
+  }
+  .text {
+    background-color: white;
+    padding-bottom: 20px;
+    color: black;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    /*mix-blend-mode: screen;  This makes the cutout text possible */
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer{
+    text-align: center;
+  }
+}

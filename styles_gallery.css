@@ -1,0 +1,494 @@
+body{
+  font-family: 'Lato', sans-serif;
+  /*background: linear-gradient(0deg, #11cfff 50%, #F5F5F5 50%);*/
+}
+
+.trial
+{
+  border-radius: 50px 10px 50px 10px !important;
+}
+
+
+.container-fluid
+{
+  width: 90%;
+}
+
+.page-section
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.navbar
+{
+  margin-bottom: 50px;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 580px) {
+  .navLinks {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .navLinks {
+    font-size: 15px;
+  }
+}
+
+.navLinks {
+  text-align: center;
+
+}
+@media screen and (min-width: 769px) {
+  .navLinks {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    font-size: 15px;
+  }
+}
+
+.title
+{
+  margin-bottom: 20px;
+}
+
+.gallery
+{
+  margin-left: 20px; /*to suit mobile view*/
+  margin-right: 20px;
+}
+
+.rounded { /* Rounded class for hover zoom */
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+}
+
+.rounded:hover { /* Rounded class for hover zoom */
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.accent-bar {
+    background-color: #11cfff;
+    /*#11fbff; #11c7ff;*/
+}
+
+.accent-bar {
+    width: 50px;
+    height: 5px;
+    line-height: 1;
+    display: inline-block;
+    margin: 5px 0 20px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+.card
+{
+  border-radius: 50px 10px 50px 10px !important;
+}
+
+.hero-sub-images
+{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card-img-top
+{ 
+  height: 250px;
+  border-radius: 50px 10px 50px 10px;
+}
+
+.card-body {
+  z-index: 2;
+  position: absolute;
+  font-size: 1vw; /* Responsive font size */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 1;
+  border-radius: 0px 0px 80px 10px !important;
+}
+
+.image-container {
+  background-image: url("gallery/title_bg.png"); /* The image used - important! */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 200px; /* Some height */
+  margin-top: 80px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 3vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  width: 70%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;  This makes the cutout text possible */
+ }
+ 
+ .text1 {
+  background-color: white;
+  /*color: #ae41d9;*/
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  width: 70%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  /*mix-blend-mode: screen;  This makes the cutout text possible */
+ }
+
+
+#myCarousel img
+{
+  height: 620px;
+}
+
+
+.carousel-inner
+{
+  background-color: white;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 20%;
+    background-color: white;
+}
+.carousel-indicators .active {
+    background-color:  #11cfff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+/*
+@media (max-width:500px)
+{
+  #myCarousel img
+  {
+    height: 250px;
+  }
+
+  .modal-body
+  {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+}*/
+
+
+.youtube
+{
+  width: 100%;
+  height: 250px;
+  border-radius: 50px 10px 50px 10px !important;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+  }
+}
+
+/* Make the modal be transparent */
+#myModal .modal-content {
+  border: 0;
+}
+
+.modal {
+  padding: 0 !important;
+}
+
+.modal .modal-dialog {
+  height: 100vh;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+}
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  /*background-color: rgba(0,0,0,.0001) !important;*/
+}
+.modal .modal-body {
+  overflow-y: auto;
+}
+
+/*.modal-body
+{
+  border: 5px solid black;
+}*/
+
+.site-footer
+{
+  margin-top: 50px;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+
+  .image-container
+  {
+    background-image: url("gallery/title_bg.png"); /* The image used - important! */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 100px; /* Some height */
+    margin-top: 80px; 
+  }
+
+  .text
+  {
+    background-color: white;
+    color: black;
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 80%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    /*mix-blend-mode: screen;  This makes the cutout text possible */
+ }
+
+ .text1
+  {
+    background-color: white;
+    color: black;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    width: 80%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    /*mix-blend-mode: screen;  This makes the cutout text possible */
+ }
+ 
+ .card-body
+ {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  font-size: 3vw; /* Responsive font size */
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 1;
+  border-radius: 0px 0px 80px 10px !important;
+  }
+
+ .card-img-top
+  {
+    height: 200px;
+  }
+
+  .youtube
+  {
+    height: 200px;
+    border-radius: 50px 10px 50px 10px !important;
+    margin-bottom: 30px;
+  }
+
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

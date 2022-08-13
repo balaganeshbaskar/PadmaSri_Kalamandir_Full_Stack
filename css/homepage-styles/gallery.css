@@ -1,0 +1,53 @@
+.galleryHeader{
+  text-align: center;
+  font-weight: 700;
+  color: #ae41d9;
+}
+
+.gallery{
+  background-color: #ffe8a8;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery{
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
+
+/*for mobile friendly scaling of fonts for achievements header*/
+@media screen and (min-width: 768px) {
+  .galleryHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .galleryHeader{
+    font-size: 30px;
+  }
+}
+
+.galleryImages{
+width: 100%;
+border-radius: 50px 10px 50px 10px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+margin-top: 20px;
+height: 200px;
+}
+
+.galleryRows{
+	margin: 20px;
+}
+
+.galleryImagesAlign{
+	text-align: center;
+}
+

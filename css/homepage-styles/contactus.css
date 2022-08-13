@@ -1,0 +1,38 @@
+
+
+/*for mobile friendly scaling of fonts for curriculum header*/
+@media screen and (min-width: 768px) {
+  .contactUsHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactUsHeader{
+    font-size: 30px;
+  }
+}
+
+.contactUsHeader{
+	text-align: center;
+	font-weight: 700;
+	color: #ae41d9;
+	margin-top: 40px;
+}
+
+.contactUsText{
+	text-align: center;
+}
+
+/*for mobile friendly scaling of fonts for curriculum texxt*/
+@media screen and (min-width: 768px) {
+  .contactUsText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactUsText{
+    font-size: 13px;
+  }
+}

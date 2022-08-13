@@ -1,0 +1,104 @@
+/*common styling starts here*/
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 80%;
+  }
+}
+
+/*to reduce the gap between column*/
+@media(min-width:768px) {  /* Modify this based on column def */
+.custom-gutter{
+	margin-top: 20px;
+}
+.custom-gutter > [class*='col-'] {
+    padding-right:50px;
+    padding-left:50px; 
+}
+
+.custom-gutter > [class*="col-"]:first-child {
+  padding-left:10px;
+}
+  
+.custom-gutter > [class*="col-"]:last-child {
+  padding-right:10px;
+}
+
+.navbar
+{
+  height: 80px;
+}
+
+/*.hero
+{
+  height: 1000px;
+}
+*/
+.heroClassImage
+{
+  height: 600px;
+  width: 1000px !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+}
+/* Color Theme Swatches in Hex */
+.Fashion-1-hex { color: #D90416; } /*red*/
+.Fashion-2-hex { color: #F20530; } /*lightly red*/
+.Fashion-3-hex { color: #D90D6C; } /*majenta*/
+.Fashion-4-hex { color: #F2E205; } /*yellow*/
+.Fashion-5-hex { color: #F2CB05; } /*dark yellow*/
+
+/* Color Theme Swatches in RGBA */
+.Fashion-1-rgba { color: rgba(216, 4, 22, 1); }
+.Fashion-2-rgba { color: rgba(242, 4, 48, 1); }
+.Fashion-3-rgba { color: rgba(216, 13, 108, 1); }
+.Fashion-4-rgba { color: rgba(242, 226, 4, 1); }
+.Fashion-5-rgba { color: rgba(242, 202, 4, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Fashion-1-hsla { color: hsla(354, 96, 43, 1); }
+.Fashion-2-hsla { color: hsla(348, 96, 48, 1); }
+.Fashion-3-hsla { color: hsla(331, 88, 45, 1); }
+.Fashion-4-hsla { color: hsla(56, 96, 48, 1); }
+.Fashion-5-hsla { color: hsla(50, 96, 48, 1); }
+
+body{
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+body, html { overflow-x:hidden; }
+
+.horizontalLine{
+  width: 60%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-top: 1px solid black;
+}
+/*common styling ends here*/
+/*styling for navbar starts here*/
+.navLinks{
+   margin: 0 auto;
+   display: table;
+}
+.navbar-header {
+   margin: 0 auto;
+   display: table;
+   margin-right: 300px !important;
+}
+@media screen and (min-width: 580px) {
+  .navLinks {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .navLinks {
+    font-size: 15px;
+  }
+}
+
+/*styling for navbar ends here*/
+
